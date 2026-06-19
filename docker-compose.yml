@@ -41,5 +41,15 @@ services:
       redis:
         condition: service_healthy
 
+  # 🚀여기에 프론트엔드 서비스를 새로 추가합니다!
+  frontend:
+    build: ./frontend
+    container_name: memo-web
+    ports:
+      - "5173:5173"  # 외부의 5173 신호를 컨테이너 안의 5173으로 연결
+    command: npm run dev  # package.json에 적어둔 "vite --host 0.0.0.0"을 강제 실행
+    depends_on:
+      - app          # 백엔드가 먼저 켜진 뒤에 프론트엔드가 켜지도록 보장
+
 volumes:
   postgres_data:

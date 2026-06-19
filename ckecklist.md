@@ -21,13 +21,13 @@
 
 #### 🟩 3단계: AWS EC2 & Docker 수동 배포 (클라우드 인프라 이해)
 
-* [ ] **AWS 계정 생성 및 가상 네트워크(VPC/Subnet) 이해** (기본 VPC 활용 가능)
-* [ ] **AWS EC2 인스턴스 생성** (Free Tier 인스턴스 활용, Ubuntu 등 OS 선택)
-* [ ] **보안 그룹(Security Group) 설정** (App 포트, SSH 포트 등 꼭 필요한 포트만 인바운드 규칙 열기)
-* [ ] **탄력적 IP(Elastic IP) 연결** (서버가 재시작되어도 IP가 바뀌지 않도록 설정)
-* [ ] **EC2 서버 접속 및 환경 구축** (SSH로 접속 후 Docker 및 Docker Compose 설치)
-* [ ] **수동 배포 진행** (로컬 코드를 EC2로 복사하거나 가상 서버에서 Git Clone 후 `docker-compose up -d` 실행)
-* [ ] **외부 접속 테스트** (퍼블릭 IP를 통해 실제 브라우저에서 메모장 앱에 접속 가능한지 확인)
+* [x] **AWS 계정 생성 및 가상 네트워크(VPC/Subnet) 이해** (기본 VPC 활용 가능)
+* [x] **AWS EC2 인스턴스 생성** (Free Tier 인스턴스 활용, Ubuntu 등 OS 선택)
+* [x] **보안 그룹(Security Group) 설정** (App 포트, SSH 포트 등 꼭 필요한 포트만 인바운드 규칙 열기)
+* [x] **탄력적 IP(Elastic IP) 연결** (서버가 재시작되어도 IP가 바뀌지 않도록 설정)
+* [x] **EC2 서버 접속 및 환경 구축** (SSH로 접속 후 Docker 및 Docker Compose 설치)
+* [x] **수동 배포 진행** (로컬 코드를 EC2로 복사하거나 가상 서버에서 Git Clone 후 `docker-compose up -d` 실행)
+* [x] **외부 접속 테스트** (퍼블릭 IP를 통해 실제 브라우저에서 메모장 앱에 접속 가능한지 확인)
 
 #### 🟩 4단계: GitHub Actions를 통한 CI/CD 파이프라인 구축 (배포 자동화)
 

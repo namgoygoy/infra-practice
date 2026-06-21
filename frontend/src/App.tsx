@@ -7,6 +7,7 @@ import {
   updateMemo,
 } from './api/memos'
 import type { Memo } from './types/memo'
+import { DEPLOY_MESSAGE, DEPLOY_VERSION } from './version'
 import './App.css'
 
 function App() {
@@ -96,8 +97,16 @@ function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1>메모장</h1>
-        <p>FastAPI + PostgreSQL 백엔드 연동</p>
+        <div className="header-top">
+          <div>
+            <h1>메모장</h1>
+            <p>FastAPI + PostgreSQL 백엔드 연동</p>
+          </div>
+          <div className="deploy-badge" title="자동 배포 확인용">
+            <span className="deploy-badge__version">{DEPLOY_VERSION}</span>
+            <span className="deploy-badge__message">{DEPLOY_MESSAGE}</span>
+          </div>
+        </div>
       </header>
 
       {error && <div className="error">{error}</div>}

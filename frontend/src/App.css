@@ -8,6 +8,37 @@
   margin-bottom: 1.5rem;
 }
 
+.header-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.deploy-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.25rem;
+  padding: 0.6rem 0.85rem;
+  border-radius: 10px;
+  background: #ecfdf5;
+  border: 1px solid #6ee7b7;
+}
+
+.deploy-badge__version {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #047857;
+  letter-spacing: 0.02em;
+}
+
+.deploy-badge__message {
+  font-size: 0.75rem;
+  color: #059669;
+}
+
 .header h1 {
   margin: 0 0 0.25rem;
   font-size: 2rem;
